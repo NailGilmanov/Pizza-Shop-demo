@@ -1,0 +1,225 @@
+button:active, button:focus {
+    outline: none !important;
+}
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+/* WRAPPER */
+    .wrapper {
+        background: #FFDF8C;  
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .wrapper_content {
+        background: #FFFFFF;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
+        border-radius: 10px;
+    }
+
+
+/* header */ 
+    .header {
+        padding-top: 5.5vh;
+        padding-bottom: 5.5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    .label {
+        display: grid;
+        grid-template-columns: 1fr 80fr;
+        min-width: 330px;
+        margin-right: 40px;
+    }
+
+    .icon {
+        margin-top: 6px;
+        height: 5vh;
+        width: 5vh;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vh;
+    }
+
+    .subtitle {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #7B7B7B;
+    }
+
+    .cart {
+        min-width: 150px;
+    }
+
+    .cart_content {
+        font-weight: 300;
+        padding-top: 6px;
+        padding-left: 15px;
+        background: #FE5F1E;
+        border-radius: 30px;
+        color: white;
+        max-width: 160px;
+        min-width: 150px;
+        height: 5.5vh;
+        font-size: 2.5vh;
+        float: right;
+        cursor: pointer;
+    }
+
+    .cart_svg {
+        width: 30px;
+        height: 30px;
+    }
+
+/* Content */
+    .main {
+        padding-top: 5.5vh;
+        padding-bottom: 5.5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    ul {
+        list-style: none; 
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+
+    .option-btn {
+        display: inline;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+        font-size: 2.1vh;
+        margin-right: 30px;
+    }
+
+    .op-btn {
+        background-color: #F9F9F9;
+        border: 0;
+        border-radius: 70px;
+        text-align: center;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: .2s;
+    }
+
+    .active {
+        background: #282828;
+        color: white;
+    }
+
+    .main-content {
+        margin-top: 4vh;
+    }
+
+    .main-title {
+        font-weight: 700;
+        font-size: 5vh;
+    }
+
+    .main-content-wrapper {
+        margin-top: 40px;
+    }
+
+    .pizza-item {
+        margin-right: 40px;
+        display: inline-block;
+        width: 340px;
+        margin-bottom: 70px;
+        margin-right: 40px;
+    }
+
+    .pizza-img {
+        width: 100%;
+    }
+
+    .pizza-item-title {
+        color: black;
+        margin-top: 23px;
+        text-align: center;
+        font-weight: 1000;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .pizza-price {
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 700;
+        display: inline;
+        margin-right: 20px;
+        padding-left: 45px;
+    }
+
+    .pizza-add-btn {
+        border: 2px solid #EB5A1E;
+        color: #EB5A1E;
+        border-radius: 70px;
+        text-align: center;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: .2s;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .pizza-add-btn:hover {
+        background: #EB5A1E;
+        color: white;
+    }
+
+    .activeBtn {
+        background: #EB5A1E;
+        color: white;
+    }
+
+    .btn {
+        color: white !important;
+        font-size: 1.1rem !important;
+    }
+
+    .paid {
+        background-color: #EB5A1E !important;
+    }
+
+    .cart-img {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        margin-top: -55px;
+    }
+
+    .cart-pizza-title {
+        display: inline-block;
+        width: 100%;
+        max-width: 360px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0;
+        margin-bottom: -35px;
+    }
+
+    .cart-pizza {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }

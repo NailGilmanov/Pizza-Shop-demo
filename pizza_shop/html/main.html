@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Корзина</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-content">
+                    <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Добавьте что-нибудь из меню</h4>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Вернуться назад</button>
+            <button type="button" class="btn btn-warning paid">Оплатить сейчас</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="wrapper_content">
+            <div class="header">
+                <div class="label">
+                    <div class="icon"><a href="#"><img src="../images/Снимок экрана 2020-12-30 155822.png" class='icon' alt="icon"></a></div>
+                    <div>
+                        <div class="title">PIZZA SHOP</div>
+                        <div class="subtitle">самая вкусная пицца во вселенной</div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart_content">
+                        <div class="price btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">0 ₽ | <img class='cart_svg' src="../images/shopping-cart.svg" alt="cart"> 0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-option">
+                    <ul id="option-btn-wrapper">
+                        <li class="option-btn"><button class="op-btn active opBtn">Все</button></li>
+                        <li class="option-btn"><button class="op-btn opBtn">Мясные</button></li>
+                        <li class="option-btn"><button class="op-btn opBtn">Вегетарианская</button></li>
+                        <li class="option-btn"><button class="op-btn opBtn">Гриль</button></li>
+                        <li class="option-btn"><button class="op-btn opBtn">Острые</button></li>
+                        <li class="option-btn"><button class="op-btn opBtn">Закрытые</button></li>
+                    </ul>
+                </div>
+                <div class="main-content">
+                    <h1 class="main-title">Все пиццы</h1>
+                    <div class='main-content-wrapper'>
+                        <div class="pizza-item" id='p1' price='390' img="../images/pizza1.png" namejs='Чизбургер-пицца'>
+                            <img src="../images/pizza1.png" id="pizza1" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Чизбургер-пицца'>Чизбургер-пицца</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='390'>
+                                от 390 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='390'>+ Добавить</button>
+                        </div>
+
+                        <div class="pizza-item" id='p2'>
+                            <img src="../images/pizza2.png" id="pizza2" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Сырная'>Сырная</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='450'>
+                                от 450 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='450'>+ Добавить</button>
+                        </div>
+
+                        <div class="pizza-item" id='p3'>
+                            <img src="../images/pizza3.png" id="pizza3" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Креветки по-азиатски'>Креветки по-азиатски</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='290'>
+                                от 290 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='290'>+ Добавить</button>
+                        </div>
+
+                        <div class="pizza-item" id='p4'>
+                            <img src="../images/pizza4.png" id="pizza4" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Сырный цыпленок'>Сырный цыпленок</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='385'>
+                                от 385 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='385'>+ Добавить</button>
+                        </div>
+
+                        <div class="pizza-item" id='p5'>
+                            <img src="../images/pizza1.png" id="pizza1" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Чизбургер-пицца'>Чизбургер-пицца</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='390'>
+                                от 390 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='390'>+ Добавить</button>
+                        </div>
+
+                        <div class="pizza-item" id='p6'>
+                            <img src="../images/pizza2.png" id="pizza2" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Сырная'>Сырная</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='450'>
+                                от 450 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='450'>+ Добавить</button>
+                        </div>
+
+                        <div class="pizza-item" id='p7'>
+                            <img src="../images/pizza3.png" id="pizza3" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Креветки по-азиатски'>Креветки по-азиатски</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='290'>
+                                от 290 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='290'>+ Добавить</button>
+                        </div>
+
+                        <div class="pizza-item" id='p8'>
+                            <img src="../images/pizza4.png" id="pizza4" class="pizza-img" alt="фото пиццы">
+                            <div class="pizza-item-title" id='Сырный цыпленок'>Сырный цыпленок</div>
+                            <div class="pizza-option">
+
+                            </div>
+                            <div class="pizza-price" id='385'>
+                                от 385 ₽
+                            </div>
+                            <button class="pizza-add-btn addToCart" id='385'>+ Добавить</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
